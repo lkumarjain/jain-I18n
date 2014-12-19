@@ -1,6 +1,6 @@
 Jain-I18n
 =========
-
+<pre>
 JainI18N is a pure server-side extension to a great Vaadin framework, providing extra collection of common use cases usually used in almost any vaadin-based web application. There are couple of libraries available to support these features, but either they are missing some of the use cases or they need component registration logic to be written by the developer. This library aims to help you save development time by reusing pre-defined components :
 
 ◆ I18N (Internationalization) support :
@@ -41,3 +41,4 @@ This library also allows you to defining your own I18NComponentHandler for a spe
 ✔ Also, you can group your actions by annotating  action provider component or class by annotating them with @JNGroups or @JNGroup annotations.
 ✔ This also allows you to add security to all these action methods to control visibility. You can achieve security by providing a security provider which should implemnet JNISecured.
 ✔ Also allows you to add confirmation dialog for any action.
+</pre>
