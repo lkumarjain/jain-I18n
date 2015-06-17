@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.vaadin.addons</groupId>
-	<version>1.1.8</version>
+	<version>1.1.8.dorsale</version>
 	<artifactId>jain-i18N</artifactId>
 	<name>Jain I18N</name>
 	<description>A project having I18N, Observer pattern and some utility APIs for the Vaadin application</description>
