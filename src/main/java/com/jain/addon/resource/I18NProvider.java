@@ -25,7 +25,7 @@ import java.util.Locale;
  * @since Aug 27, 2012
  * @version 1.0.0
  */
-public interface I18NProvider extends Serializable {
+public interface I18NProvider {
 	public static final String MESSAGE_KEY = ".message";
 	public static final String TITLE_KEY = ".title";
 	public static final String BLANK = "";
