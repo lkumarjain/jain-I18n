@@ -32,6 +32,7 @@ import com.vaadin.ui.HasComponents.ComponentAttachEvent;
 import com.vaadin.ui.HasComponents.ComponentAttachListener;
 import com.vaadin.ui.HasComponents.ComponentDetachEvent;
 import com.vaadin.ui.HasComponents.ComponentDetachListener;
+import com.vaadin.ui.PopupView;
 import com.vaadin.ui.SingleComponentContainer;
 
 /**
@@ -64,12 +65,28 @@ public class JAttachDetachListner implements ComponentDetachListener, ComponentA
 			container.addComponentAttachListener(this);
 			container.addComponentDetachListener(this);
 		}
+		
+		Boolean isPopup = false;
+		if (component instanceof PopupView) {
+			PopupView popupView = (PopupView) component;
+			Component popupComponent = popupView.getContent().getPopupComponent();
+			if (popupComponent != null) {
+				isPopup = true;
+				popupComponent.setParent(popupView);
+				component = popupComponent;
+			}
+			
+		}
 
 		if(component instanceof HasComponents) {
 			HasComponents container = (HasComponents) component;
 			for (Component containerComponent : container) {
 				initializeNAddRemoveListner(containerComponent, remove);
 			}
+		}
+		
+		if (isPopup) {
+			component.setParent(null);
 		}
 
 		initializeComponent(component);
