@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.vaadin.addons</groupId>
 	<version>1.1.10</version>
-	<artifactId>jain-i18N</artifactId>
+	<artifactId>jain-i18N-fork</artifactId>
 	<name>Jain I18N</name>
 	<description>A project having I18N, Observer pattern and some utility APIs for the Vaadin application</description>
 
@@ -24,8 +24,20 @@
 			<url>https://oss.sonatype.org/content/repositories/vaadin-releases</url>
 		</repository>
 	</repositories>
-
+	<distributionManagement>
+		<repository>
+			<id>ftp-repository</id>
+			<url>ftp://176.31.190.0/srv/ftp/repository</url>
+		</repository>
+	</distributionManagement>
 	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>2.2</version>
+			</extension>
+		</extensions>
 		<resources>
 			<resource>
 				<filtering>true</filtering>
