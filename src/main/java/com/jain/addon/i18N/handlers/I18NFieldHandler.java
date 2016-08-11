@@ -76,7 +76,10 @@ public class I18NFieldHandler extends I18NAbstractComponentHandler implements Se
 	public String getInputPrompt(Locale locale) {
 		if (StringHelper.isNotEmptyWithTrim(i18NInputPrompt)) {
 			String value = provider.getTitle(locale, i18NInputPrompt);
-			return value + " ... ";
+			if(provider.isAutoDotToPrompt()){
+				return value + " ... ";
+			}
+			return value;
 		}
 		return "";
 	}

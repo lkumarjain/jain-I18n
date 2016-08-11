@@ -84,4 +84,9 @@ public class DefaultI18NResourceProvider extends AbstractI18NResourceProvider {
 		}
 		return defaultValue;
 	}
+
+	@Override
+	public boolean isAutoDotToPrompt() {
+		return true;
+	}
 }
