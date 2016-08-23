@@ -34,4 +34,6 @@ public interface I18NProvider {
 	public String getText(Locale locale, String identifier, Object ... params);
 	public String getTitle(Locale locale, String identifier, Object ... params);
 	public String getMessage(Locale locale, String identifier, Object ... params);
+	
+	public boolean isAutoDotToPrompt();
 }
