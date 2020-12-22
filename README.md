@@ -44,6 +44,6 @@ This library also allows you to defining your own `I18NComponentHandler` for a s
 ◆ Action / Menu bar :
 	Allows you to create action/menu bar with or without grouping by annotations.<br/>
 ✔ You can achieve this functionality by annotating your action method with `@JNAction` annotation.<br/>
-✔ Also, you can group your actions by annotating  action provider component or class by annotating them with `@JNGroups` or `@JNGroup` annotations.
+✔ Also, you can group your actions by annotating  action provider component or class by annotating them with `@JNGroups` or `@JNGroup` annotations.<br/>
 ✔ This also allows you to add security to all these action methods to control visibility. You can achieve security by providing a security provider which should implemnet `JNISecured`.<br/>
 ✔ Also allows you to add confirmation dialog for any action.
