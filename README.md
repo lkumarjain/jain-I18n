@@ -14,34 +14,34 @@ This library also allows you to defining your own `I18NComponentHandler` for a s
 ✔ Register/De-register your component handler by calling register/deRegister static method of I18NComponentHandlerFactory in initialize method of ApplicationUI class.<br/>
 
 
-◆ I18N (Internationalization) change listener :
+◆ I18N (Internationalization) change listener :<br/>
 	Allows you to customize component data and other attributes on local change.<br/>
 ✔ You can achieve this functionality in the application by implementing `I18NChangeListener`  interface on your component.<br/>
 
 
-◆ Component Initialization :
+◆ Component Initialization :<br/>
 	Allows you to initialize component after creation similar to post construct call back in EJB. This initialization happens during `I18N` component registration API.<br/>
 ✔ You can achieve this functionality by annotating your initialization method by `@JNIComponentInit` annotation.<br/>
 
 
-◆ Image Component :
+◆ Image Component :<br/>
 	Allows you to upload image with instant view in the form.<br/>
 ✔ You can achieve this by adding `JImage` component in your application.<br/>
 
 
-◆ Login event listener :
+◆ Login event listener :<br/>
 	Allows you to call a method in your component after login event accures.<br/>
 ✔ You can achieve this functionality by implementing `JNILoginListenr` on your component.<br/>
 ✔ This requires you to call onLogin static method of the `JLoginHandler` by passing UI object.<br/>
 
 
-◆ Observer Design Pattern :
+◆ Observer Design Pattern :<br/>
 	Allows you to add observers and fire an event to call these observable methods.<br/>
 ✔ Observers defined in each component will be called after firing an event in from the application.<br/>
 ✔ You can define observable method by annotating `@JNIObserver` annotation.<br/>
 
 
-◆ Action / Menu bar :
+◆ Action / Menu bar :<br/>
 	Allows you to create action/menu bar with or without grouping by annotations.<br/>
 ✔ You can achieve this functionality by annotating your action method with `@JNAction` annotation.<br/>
 ✔ Also, you can group your actions by annotating  action provider component or class by annotating them with `@JNGroups` or `@JNGroup` annotations.<br/>
