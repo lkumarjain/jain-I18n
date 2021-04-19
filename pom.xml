@@ -106,6 +106,6 @@
 	</dependencies>
 	<properties>
 		<version.java.app>1.6</version.java.app>
-		<vaadin.version>7.5.4</vaadin.version>
+		<vaadin.version>7.7.24</vaadin.version>
 	</properties>
 </project>
